@@ -6,7 +6,7 @@ This interactive D3.js-based dashboard visualizes popular US stocks listed in th
 
 Our goal is to make financial insights accessible to everyone, especially those without extensive trading experience, through easy-to-interpret visuals and clear descriptions.
 
-![Dashboard Preview](https://github.com/gderiddershanghai/dva_team173_frontend/raw/main/dashboard_preview.png)
+![Dashboard Preview](dashboard_preview.png)
 
 ## ✨ Features
 
@@ -92,10 +92,10 @@ Visit our hosted version at [https://gderiddershanghai.github.io/dva_team173_fro
 - **Social Media Data**: Processed Twitter data with sentiment analysis
 - **Market Benchmark**: S&P 500 index (SPY) for performance comparisons
 
-## 👥 Team
+## 👥 Team Members
 
-- Team 173 - Data Visualization and Analytics Project
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details. 
+- Ginger Armando de Ridder
+- Jason Othniel Lim
+- Wooseok Kim
+- Carina Lim
+- Gwan-Hyeong Song
