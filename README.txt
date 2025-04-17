@@ -82,15 +82,16 @@ Our visualization constantly sends and receives information from our backend, a 
 =====================================
 Installation
 =====================================
-To install our code is very straightforward and simple - just clone our repository on the GitHub link "LINK TO BE ADDED HERE". After cloning (or directly downloading from the repository), set a virtual environment with latest Python version with your favorite setup methods (venv, conda, etc.) and download packages listed in requirements.txt file. 
+To install our code is very straightforward and simple - just clone our repository on the GitHub link "https://github.com/rladntjr7/DVA_Team_173_final.git". After cloning (or directly downloading from the repository), set a virtual environment with latest Python version with your favorite setup methods (venv, conda, etc.) and download packages listed in requirements.txt file.
+If you wish not to download/clone from our repository, you can still work with what we have in the submitted .zip file. Just head to this Google Drive link "https://drive.google.com/drive/folders/16neNsIPCrI6R0i1HANJnhdv7LXl8XRw3?usp=share_link" and download our dataset. Make sure the "clean_data" folder is located at the root directory of the project folder, on the same level with "calculations" folder.
 There is another way that does not require any download/installation - our page hosted on GitHub Pages! We already hosted all our codes to GitHub and Cloud. The page is accessible with the link "https://gderiddershanghai.github.io/dva_team173_frontend/". Please note that the performance on the cloud is significantly slower than running on local devices, due to compromises made in resource selection on cloud.
 
 =====================================
 Execution
 =====================================
 If you chose to run locally, you can follow the following steps:
-1. On your IDE (we recommend VSCode), change your directory in both the explorer and the terminal.
+1. On your IDE (we recommend VSCode), open the folder of the downloaded/cloned project.
 2. Activate the virtual enviroment where the required Python packages are installed.
-3. Run calculation_api.py to activate the FastAPI server.
-4. Launch a local server to open the webpage. There are plenty of options available, but we recommend using "Live Server" extension on VSCode. Just right-click on the index.html file inside the IDE's explorer and select "Open with Live Server".
-5. You can now enjoy the dashboard with plenty of visualization and helpful insights!
+3. Run calculations/calculation_api.py to activate the FastAPI server.
+4. Launch a local server to open the webpage. There are plenty of options available, but we recommend using "Live Server" extension on VSCode. Just right-click on the src/index.html file inside the IDE's explorer and select "Open with Live Server".
+5. You can now enjoy the dashboard with plenty of visualization and helpful insights! Please play around all our features we provided, including searching for stocks, sliding the date range, playing with the bubbles, etc. Hope you enjoy!
