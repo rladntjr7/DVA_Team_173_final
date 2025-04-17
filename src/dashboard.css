@@ -1,12 +1,9 @@
-/* Import Roboto font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
-/* Global font setting */
 * {
   font-family: 'Roboto', sans-serif;
 }
 
-/* Dashboard container */
 #dashboard {
     width: 2560px;
     height: 1440px;
@@ -18,7 +15,6 @@
     background-color: #F1EEEB;
   }
   
-  /* Top and bottom rows */
   #top-row, #bottom-row {
     display: flex;
     justify-content: space-between;
@@ -29,7 +25,6 @@
     margin-top: 60px;
   }
   
-  /* Top row components */
   #line-container {
     width: 1080px;
     height: 800px;
@@ -43,7 +38,6 @@
     flex-direction: column;
   }
   
-  /* Chart top row styling */
   #chart-top-row {
     display: flex;
     align-items: center;
@@ -51,7 +45,6 @@
     margin-bottom: 20px;
   }
   
-  /* Ticker box styling */
   #ticker-box {
     width: 200px;
     height: 80px;
@@ -68,7 +61,6 @@
     color: #000;
   }
   
-  /* Stock info styling */
   #stock-info {
     display: flex;
     flex-direction: column;
@@ -96,7 +88,6 @@
     color: #DB5167;
   }
   
-  /* Search container styling */
   .search-container {
     position: relative;
     width: 250px;
@@ -118,7 +109,6 @@
     color: #A38E79;
   }
   
-  /* Chart bottom row styling */
   #chart-bottom-row {
     display: flex;
     flex-direction: column;
@@ -130,7 +120,6 @@
     height: 700px;
   }
   
-  /* Chart content wrapper with consistent margins */
   #chart-content-wrapper {
     padding: 20px 0px 40px 0px;
     height: 100%;
@@ -139,7 +128,6 @@
     flex-direction: column;
   }
   
-  /* Chart header with title and controls */
   #chart-header {
     display: flex;
     justify-content: space-between;
@@ -162,7 +150,6 @@
     transform: translateX(30px);
   }
   
-  /* Moving average controls */
   #ma-controls-container {
     display: flex;
     flex-direction: column;
@@ -231,7 +218,6 @@
     white-space: nowrap;
   }
   
-  /* Moving average options */
   .ma-options {
     display: flex;
     gap: 15px;
@@ -253,7 +239,6 @@
     background-color: #D6CDC4;
   }
   
-  /* Line chart styling */
   #lineChart {
     flex-grow: 1;
     width: 1080px;
@@ -262,14 +247,12 @@
     margin: 0;
   }
   
-  /* SVG styling for the chart */
   #lineChart svg {
     width: 100%;
     height: 500px;
     background-color: transparent;
   }
   
-  /* Hide axis lines but keep ticks */
   .x-axis path, .y-axis path {
     display: none;
   }
@@ -278,7 +261,6 @@
     display: none;
   }
   
-  /* Fill styles for the line area */
   .area-up {
     fill: #B6E2D3;
     opacity: 0.7;
@@ -289,7 +271,6 @@
     opacity: 0.7;
   }
   
-  /* Line styles */
   .price-line-up {
     stroke: #00BF7F;
     stroke-width: 2;
@@ -302,7 +283,6 @@
     fill: none;
   }
   
-  /* Date slider styling */
   #date-sliders {
     position: relative;
     bottom: 10px;
@@ -350,14 +330,12 @@
     z-index: 3;
   }
   
-  /* Date label styling for better font rendering */
   .date-label-text {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     dominant-baseline: middle;
   }
   
-  /* Performance table */
   #performance-table {
     width: 1300px;
     height: 460px;
@@ -369,7 +347,6 @@
     background-color: #FFF;
   }
   
-  /* Performance table title */
   #performance-table h2 {
     font-size: 28px;
     margin-bottom: 20px;
@@ -377,7 +354,6 @@
     font-weight: 500;
   }
   
-  /* Bottom row components */
   #correlation-container {
     width: 1080px;
     height: 460px;
@@ -401,7 +377,6 @@
     box-sizing: border-box;
   }
   
-  /* Correlation charts */
   #correlationChart {
     display: flex;
     justify-content: space-between;
@@ -418,7 +393,6 @@
     margin-right: 40px;
   }
   
-  /* Suggestion dropdown */
   .suggestion-dropdown {
     display: none;
     position: absolute;
@@ -449,7 +423,6 @@
     background-color: #f7f5f3;
   }
   
-  /* Data point styling */
   .data-point {
     r: 3;
     transition: r 0.2s, fill 0.2s;
@@ -467,7 +440,6 @@
     r: 5;
   }
   
-  /* Tooltip for line chart */
   .tooltip {
     position: absolute;
     padding: 10px;
@@ -480,14 +452,12 @@
     max-width: 200px;
   }
   
-  /* Sentiment bubbles */
   #sentimentChart svg {
     background-color: transparent;
     width: 1200px;
     height: 700px;
   }
   
-  /* Table styling */
   #performance-table table {
     width: 100%;
     border-collapse: collapse;
@@ -502,7 +472,6 @@
     background-color: #f2f2f2;
   }
   
-  /* Grid styling */
   .grid line {
     stroke: #ddd;
     stroke-opacity: 0.7;
@@ -513,13 +482,11 @@
     stroke-width: 0;
   }
   
-  /* Axis styling */
   .x-axis text, .y-axis text {
     font-size: 12px;
     fill: #888;
   }
   
-  /* Moving average line */
   .ma-line {
     stroke-width: 2;
   }
