@@ -6,6 +6,8 @@ This interactive D3.js-based dashboard visualizes popular US stocks listed in th
 
 Our goal is to make financial insights accessible to everyone, especially those without extensive trading experience, through easy-to-interpret visuals and clear descriptions.
 
+This project is available online at [https://gderiddershanghai.github.io/dva_team173_frontend/](https://gderiddershanghai.github.io/dva_team173_frontend/).
+
 ![Dashboard Preview](dashboard_preview.png)
 
 ## ✨ Features
@@ -50,12 +52,54 @@ Our goal is to make financial insights accessible to everyone, especially those 
 - **Pandas/NumPy**: For financial calculations and data manipulation
 - **Sentiment Analysis**: Natural language processing for social media data
 
+## 📊 Data Sources
+
+- **Stock Price Data**: 
+  - [US Stock Dataset (Kaggle)](https://www.kaggle.com/datasets/footballjoe789/us-stock-dataset)
+
+- **Twitter Data**:
+  - [Tweet Sentiment's Impact on Stock Returns](https://www.kaggle.com/datasets/thedevastator/tweet-sentiment-s-impact-on-stock-returns)
+  - [IEEE Stock Market Tweets Dataset](https://ieee-dataport.org/open-access/stock-market-tweets-data)
+  - [Stock Tweets for Sentiment Analysis](https://www.kaggle.com/datasets/equinxx/stock-tweets-for-sentiment-analysis-and-prediction)
+  - [Tweets About Top Companies (2015-2020)](https://www.kaggle.com/datasets/omermetinn/tweets-about-the-top-companies-from-2015-to-2020)
+
+- **Clean Datasets**:
+  - [Processed Datasets (Google Drive)](https://drive.google.com/drive/folders/1PPvOJULRUWUcHZwWMKx_v-nUEV7TC_U7?usp=drive_link)
+
+## 🤖 BERT Finetuning & Modeling
+
+The BERT model was used to generate sentiment scores for tweets:
+
+- **Tweet Normalization**: Custom normalization for BERT inputs (`data_processing/TweetNormalizer.py`)
+- **Dataset Preparation**: Loading and formatting tweet datasets for training (`data_processing/dataset_loader.py`, `data_processing/notebooks/training_data_set_creation.ipynb`)
+- **Model Finetuning**: Custom regression head for sentiment prediction (`data_processing/tweet_bert_finetune.py`, `data_processing/sentiment_trainer.py`)
+- **Prediction Pipeline**: System to score new tweets by sentiment (`data_processing/predict_tweets.py`)
+
+## 🧹 Data Processing
+
+### Data Cleaning & Merging
+- Duplicate tweet removal (`data_processing/notebooks/ginger/check_for_duplicates.ipynb`)
+- Dataset standardization and cleaning (`data_processing/notebooks/cleaning_carinas_labelled_dataset.ipynb`)
+- Stock ticker selection based on tweet volume (`data_processing/get_target_stocks.py`)
+- Dataset combination from multiple sources (`data_processing/notebooks/merging_all_datasets.ipynb`, `data_processing/notebooks/reducing_the_large_dataset.ipynb`, `data_processing/notebooks/big_tweets.ipynb`)
+
+### Tweet Cleaning & Stopwords
+- Custom stopword filtering logic (`data_processing/common_words/filter_stopwords.py`)
+- Tweet cleaning functions (`data_processing/common_words/tweet_cleaner.py`)
+- Sentiment distribution analysis (`data_processing/notebooks/histograms/`)
+- Final tweet consolidation (`data_processing/notebooks/split stocks.ipynb`)
+
+### Keyword Extraction
+- Top word extraction algorithms (`calculations/get_common_words.py`)
+- Adjacency matrix creation for keyword relationships (`calculations/get_common_words.py`)
+- Word form normalization and spelling correction (`calculations/word_mapping.py`)
+
 ## 📥 Installation
 
 ### Option 1: Run Locally
 1. Clone the repository:
    ```bash
-   git clone https://github.com/gderiddershanghai/dva_team173_frontend.git
+   git clone https://github.com/rladntjr7/DVA_Team_173_final.git
    ```
 2. Set up a Python virtual environment (Python 3.8+ recommended):
    ```bash
@@ -72,7 +116,7 @@ Visit our hosted version at [https://gderiddershanghai.github.io/dva_team173_fro
 
 *Note: The cloud-hosted version may be slower than running locally due to resource limitations.*
 
-## 🚀 Usage
+## 🚀 Execution
 
 1. Start the backend server:
    ```bash
@@ -80,17 +124,15 @@ Visit our hosted version at [https://gderiddershanghai.github.io/dva_team173_fro
    ```
 
 2. Launch a local server for the frontend:
-   - Using VS Code: Install the "Live Server" extension, right-click on `index.html` and select "Open with Live Server"
+   - Using VS Code: Install the "Live Server" extension, right-click on `src/index.html` and select "Open with Live Server"
    - Using Python: `python -m http.server` in the project directory
    - Using Node.js: `npx serve` in the project directory
 
 3. Open your browser and navigate to the local server address (typically http://localhost:5500 or http://localhost:8000)
 
-## 📊 Data Sources
+## 🎥 Demo
 
-- **Stock Price Data**: Historical price data for 40 major S&P 500 stocks
-- **Social Media Data**: Processed Twitter data with sentiment analysis
-- **Market Benchmark**: S&P 500 index (SPY) for performance comparisons
+Watch our demo video: [https://youtu.be/CzXxti6U2Lc](https://youtu.be/CzXxti6U2Lc)
 
 ## 👥 Team Members
 
@@ -99,3 +141,7 @@ Visit our hosted version at [https://gderiddershanghai.github.io/dva_team173_fro
 - Wooseok Kim
 - Carina Lim
 - Gwan-Hyeong Song
+
+---
+
+*Note: This README was formatted with assistance from a generative AI tool.*
